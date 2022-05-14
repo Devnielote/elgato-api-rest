@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Cats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <img src="./assets/cat-icon.png" alt="" />
+        <h1>El gato! (っ °Д °;)っ</h1>
+      </div>
+      <ul>
+        <li><a href="https://docs.thecatapi.com/">About API</a></li>
+        <li><a href="https://github.com/Devnielote">Contact</a></li>
+        <li><a href="#">Upload your own</a></li>
+      </ul>
+    </nav>
+    <div class="main">
+      <header>
+        <h2>Your typical cat <span>generator</span></h2>
+      </header>
+      <!-- <section class="upload-michi">
+        <div class="upload-michi__title">
+          <h2>Upload your cat</h2>
+        </div>
+        <div class="upload-michi__container">
+          <form id="upload-form">
+            <input type="file" id="file" name="file" />
+            <button type="button" onclick="uploadPicture()">
+              Upload picture
+            </button>
+          </form>
+        </div>
+      </section> -->
+      <section class="random-cats">
+        <!-- <div id="error"></div> -->
+        <div class="random-cats__title">
+          <h2>Random Ones</h2>
+        </div>
+        <article class="random-cats__container">
+          <div class="random-cats__imgContainer">
+            <img id="random-cat-img" alt="A cat" />
+            <img
+              src="./assets/icons8-bookmark.svg"
+              alt="A bookmark icon"
+              id="addFavorites1"
+              class="addFavorite-btn"
+              class="btn-sm"
+            />
+          </div>
+          <div class="random-cats__imgContainer">
+            <img id="random-cat-img" alt="A cat" />
+            <img
+              src="./assets/icons8-bookmark.svg"
+              alt="A bookmark icon"
+              id="addFavorites2"
+              class="addFavorite-btn"
+              class="btn-sm"
+            />
+          </div>
+          <div class="random-cats__imgContainer">
+            <img id="random-cat-img" alt="A cat" />
+            <img
+              src="./assets/icons8-bookmark.svg"
+              alt="A bookmark icon"
+              id="addFavorites3"
+              class="addFavorite-btn"
+            />
+          </div>
+        </article>
+        <div class="random-cats__btn">
+          <button id="cat-generator" class="btn-sm">Generate</button>
+        </div>
+      </section>
+      <section class="favorite-michis">
+        <div class="favorite-michis__info">
+          <div class="favorite-michis__title">
+            <h2>The spoiled</h2>
+          </div>
+          <div class="favorite-michis__statistics">
+            <h3>How many you have?</h3>
+            <span id="fav-amount"></span>
+          </div>
+          <div class="favorite-michis__tip">
+            <p>
+              If you want to see the real proportions of the image you can open
+              it in a new tab.
+            </p>
+          </div>
+          <div class="favorite-michis__btn">
+            <button id="favoritesBtn" class="btn-sm">Call them</button>
+          </div>
+        </div>
+        <article
+          class="favorites-michis__container"
+          id="favorite-michis__container"
+        ></article>
+      </section>
+    </div>
+    <footer>
+      <div class="footer__info">
+        <a href="https://github.com/Devnielote"
+          >Made with 💚 by <span>@devnielote</span></a
+        >
+        <a href="https://www.flaticon.com/free-icons/cat" title="cat icons"
+          >Cat icon created by Freepik - Flaticon</a
+        >
+        <a target="_blank" href="https://icons8.com"
+          >Close and bookmark and icon by Icons8</a
+        >
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
