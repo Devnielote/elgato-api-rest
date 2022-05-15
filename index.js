@@ -42,7 +42,6 @@
 // const API_UPLOAD_PICTURE = `https://api.thecatapi.com/v1/images/upload`;
 
 
-import {API_KEY, API_URL, API_FAVORITES, API_FAVORITES_DELETE, API_UPLOAD_PICTURE} from './API.js';
 const error = document.querySelector('#error');
 const catImg = document.querySelectorAll('#random-cat-img');
 const btnGenerator = document.querySelector('#cat-generator');
