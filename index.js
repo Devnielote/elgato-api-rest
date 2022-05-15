@@ -1,10 +1,48 @@
-const API_KEY = '0f3ebbb8-41b6-46ac-a181-b81feda76b93';
-const API_URL = `https://api.thecatapi.com/v1/images/search?limit=3`;
-const API_FAVORITES = `https://api.thecatapi.com/v1/favourites`;
-const API_FAVORITES_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}`;
-const API_UPLOAD_PICTURE = `https://api.thecatapi.com/v1/images/upload`;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// TODO: Agregar lazy-loading
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const API_KEY = '0f3ebbb8-41b6-46ac-a181-b81feda76b93';
+// const API_URL = `https://api.thecatapi.com/v1/images/search?limit=3`;
+// const API_FAVORITES = `https://api.thecatapi.com/v1/favourites`;
+// const API_FAVORITES_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}`;
+// const API_UPLOAD_PICTURE = `https://api.thecatapi.com/v1/images/upload`;
+
+
+import {API_KEY, API_URL, API_FAVORITES, API_FAVORITES_DELETE, API_UPLOAD_PICTURE} from './API.js';
 const error = document.querySelector('#error');
 const catImg = document.querySelectorAll('#random-cat-img');
 const btnGenerator = document.querySelector('#cat-generator');
@@ -19,7 +57,7 @@ const getImages = async () => {
         const errorText = document.createTextNode(`
             Hubo un error: ${response.status}
         `)
-        error.appendChild(errorText);
+        // error.appendChild(errorText);
     } else {
         catImg[0].src = data[0].url;
         catImg[1].src = data[1].url;
@@ -139,6 +177,8 @@ const uploadPicture = async () => {
     });
     const data = await response.json();
     const howMany = document.querySelector('#fav-amount');
+    //TODO: Agregar texto al lado de número total de gatos en favoritos
+    // If data.length > 4 That's too many catos! else Just those? You need more!
     howMany.innerHTML = "";
     howMany.append(data.length);
  }
