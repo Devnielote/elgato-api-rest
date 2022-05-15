@@ -35,11 +35,11 @@
 
 
 
-// const API_KEY = '0f3ebbb8-41b6-46ac-a181-b81feda76b93';
-// const API_URL = `https://api.thecatapi.com/v1/images/search?limit=3`;
-// const API_FAVORITES = `https://api.thecatapi.com/v1/favourites`;
-// const API_FAVORITES_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}`;
-// const API_UPLOAD_PICTURE = `https://api.thecatapi.com/v1/images/upload`;
+const API_KEY = '0f3ebbb8-41b6-46ac-a181-b81feda76b93';
+const API_URL = `https://api.thecatapi.com/v1/images/search?limit=3`;
+const API_FAVORITES = `https://api.thecatapi.com/v1/favourites`;
+const API_FAVORITES_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}`;
+const API_UPLOAD_PICTURE = `https://api.thecatapi.com/v1/images/upload`;
 
 
 const error = document.querySelector('#error');
